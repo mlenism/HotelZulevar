@@ -1,0 +1,117 @@
+<div id="Reservation">
+    <div id="Reservation-info">
+        <form id="Reservation-data">
+            <div class="div-form">
+                <label id="data1">
+                    <p class="form-text">Fecha de inicio</p>
+                </label>
+                <input type="date" id="data2" class="form-text-date" name="startDate">
+            </div>
+            <div class="div-form">
+                <label id="data3">
+                    <p class="form-text">Fecha de salida</p>
+                </label>
+                <input type="date" id="data4" class="form-text-date" name="finishDate">
+            </div>
+            <div class="div-form">
+                <label class="form-text" id="data5">
+                    <p class="form-text">Adultos</p>
+                </label>
+                <select class="form-text-data">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="div-form">
+                <label id="data6">
+                    <p class="form-text">Niños</p>
+                </label>
+                <select class="form-text-data">
+                    <option value="0" selected="selected">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="div-form-button">
+                <button type="submit" class="button-form">
+                    <a href="#" class="button-text-form">Reservar</a>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+#Reservation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px
+  }
+  
+  #Reservation-info {
+    background-color: rgb(255, 255, 255 );
+    width: 72%;
+    height: 250px;
+    text-align: center;
+    align-self: center;
+    margin-top: -100px;
+    -webkit-box-shadow: 0px 7px 10px 5px rgba(0,0,0,0.3); 
+    box-shadow: 0px 7px 10px 5px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #Reservation-data {
+    align-self: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .div-form{
+    margin-top: -40px;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  
+  .form-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+  }
+  
+  .form-text-date {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    height: 65px;
+  }
+  
+  .form-text-data {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    height: 65px;
+    width: 100px;
+  }
