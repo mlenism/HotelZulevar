@@ -2,176 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Zulevar</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 </head>
 
-<body id>
-
-    <header>
-        <div id="WelcomeContent">
-            <div id="logo">
-                <figure>
-                    <img src="images/logo.png" alt="Logo Hotel Zulevar">
+<body id="container" style="background: url('images/background.jpg') no-repeat; max-width: 4000px; background-size:cover; min-height: 100%;">
+    <div id="main-content">
+        <header id="header">
+            <div id="WelcomeContent">
+                <figure id="logo">
+                    <a href="/index.html">
+                        <img id="logo-img" src="images/logo.png" alt="Logo Hotel Zulevar" style="width: 100%; height: auto">
+                    </img></a>
                     <figcaption></figcaption>
                 </figure>
-                <div class="WelcomeTextDiv">
-                    <h1 class="WelcomeText-Title">Bienvendos al hotel zulevar</h1>
-                    <p class="WelcomeText-P">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley
-                        of type and scrambled it to make a type specimen book.</p>
+                <div id="navigation-bar">                                        
+                    <nav class="nav-bar">
+                        <a href="/aboutus.html" class="text-nav">Nosotros</a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ" class="text-nav">Paquetes turisticos</a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ" class="text-nav">Habitaciones</a>
+                        <a hhref="https://youtu.be/dQw4w9WgXcQ" class="text-nav">Contactanos</a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ" class="button-form">RESERVA AHORA</a>
+                    </nav>
                 </div>
             </div>
-            <div id="navigation-bar">
-                <nav class="nav-bar">
-                    <a href=# class="nav-text">Nosotros</a>
-                    <a href=# class="nav-text">Paquetes turisticos</a>
-                    <a href=# class="nav-text">Habitaciones</a>
-                    <a href=# class="nav-text">Contacto</a>
-                </nav>
+        </header>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="slide-img" src="images/slides/frente.jpg"/>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slide-img" src="images/slides/balcon.jpg"/>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slide-img" src="images/slides/recepcion.jpg"/>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dot-position">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+
+        <div id="content">
+            <div id="div-about-us">
+                <div id="divisor-about-us">
+                    <p id="about-us-text">Sobre nosotros</p>
+                </div>
+            </div>
+            <div id="about-us-info">
+                <p class="about-us-info-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+                </p>
+            </div>
+            <div id="div-google-maps">
+                <div id="divisor-google-maps">
+                    <p class="google-maps-text">Google maps</p>
+                </div>
+            </div>
+            <div id="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.575590405332!2d-76.29673858459701!3d3.9007226973914766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e375fbc009126f9%3A0x29e0666365150656!2sHOTEL%20ZULEVAR!5e0!3m2!1sen!2sco!4v1630197813990!5m2!1sen!2sco" width=100% height=400vw style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-    </header>
 
+        <footer class="footer">
+            <div class="footer-group">
+                <div class="footer-item-list">
+                    <p class="item-p">Ubicacion</p>
+                    <p class="item-p">Carrera 8 No. 10-13<br>
+                        Calima - El Darién<br>
+                        Valle del Cauca, Colombia</p>
+                </div>
+            </div>
+            <div class="footer-group">
+                <div class="footer-item-list">
+                    <p class="item-p">Siguenos</p>
+                    <ul class="footer-ul">
+                        <li>
+                            <a href="#" class="fa fa-facebook icon-size" style="color:#003F63;"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-instagram icon-size" style="color:#D3A13D;"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-whatsapp icon-size" style="color:#003F63;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-group">
+                <div class="footer-item-list">
+                    <p class="item-p">Contacto</p>
+                    <p class="item-p">Cel. +57 3176819481</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/slides.js"></script>
+        <script src="https://kit.fontawesome.com/1dbf08d76b.js" crossorigin="anonymous"></script>
     </div>
-
-    <div id="Reservation">
-        <div id="Reservation-info">
-            <form id="Reservation-data">
-                <div class="div-form">
-                    <label id="data1">
-                        <p class="form-text">Fecha de inicio</p>
-                    </label>
-                    <input type="date" id="data2" class="form-text-date" name="startDate">
-                </div>
-                <div class="div-form">
-                    <label id="data3">
-                        <p class="form-text">Fecha de salida</p>
-                    </label>
-                    <input type="date" id="data4" class="form-text-date" name="finishDate">
-                </div>
-                <div class="div-form">
-                    <label class="form-text" id="data5">
-                        <p class="form-text">Adultos</p>
-                    </label>
-                    <select class="form-text-data">
-                        <option value="1" selected="selected">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-                <div class="div-form">
-                    <label id="data6">
-                        <p class="form-text">Niños</p>
-                    </label>
-                    <select class="form-text-data">
-                        <option value="0" selected="selected">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-                <div class="div-form-button">
-                    <button type="submit" class="button-form">
-                        <a href="#" class="button-text-form">Reservar</a>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div>
-        <div class="row">
-            <div class="column">
-                <img class="home-page-img"
-                    src="https://www.hotelcapital.com.co/cache/b6/ba/b6bac73f7d3991c7572e863e3047cb19.jpg"
-                    alt="Smiley face" width="900" height="500">
-            </div>
-            <div class="column">
-                <h2>La historia del Hotel Zulevar</h2>
-                <p class="item-p">What the fuck did you just fucking say about me, you little bitch? I'll have you know
-                    I graduated top
-                    of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I
-                    have over 300
-                    confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed
-                    forces. You are
-                    nothing to me but just another target.</p>
-                <button class="button">
-                    <a href="#" class="button-text-form">More info</a>
-                </button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <h2>Column 1</h2>
-                <p class="item-p">What the fuck did you just fucking say about me, you little bitch? I'll have you know
-                    I graduated top
-                    of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I
-                    have over 300
-                    confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed
-                    forces. You are
-                    nothing to me but just another target. </p>
-            </div>
-            <div class="column">
-                <img class="home-page-img"
-                    src="https://s03.s3c.es/imag/_v0/770x420/c/b/1/piscinas-obra-plastico-pvc-1.jpg" alt="Smiley face"
-                    width="900" height="500">
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-group">
-            <div class="footer-item-list">
-                <ul>
-                    <li>
-                        <a href="#" class="footer-text">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-text">ROOMS</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-text">PAGES</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-item-list">
-                <ul>
-                    <li>
-                        <a href="#" class="fa fa-facebook"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="fa fa-twitter"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="fa fa-instagram"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-item-list">
-                <span class="footer-text">Hotel Zulevar © 2021 All Rights Reserved.</span>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
