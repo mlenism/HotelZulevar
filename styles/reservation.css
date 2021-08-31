@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 :root {
   --color-caracteristico: rgb(0, 63, 99);
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   color: #505050;
 }
 
 h2 {
-  font-family: "Libre Baskerville",serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 31px;
-  color: #3E3F46;
+  color: #3e3f46;
 }
 
-ul, li {
+ul,
+li {
   display: inline;
   width: 100%;
 }
@@ -33,7 +33,74 @@ img {
   vertical-align: middle;
 }
 
-#container {   
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 100%;
+  width: 25%;
+  margin: 0 2%;
+  background-color: #717171;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  opacity: 0.5;
+}
+
+.dot-position {
+  position: absolute;
+  width: 30%;
+  height: 7px;
+  top: 93%;
+  left: 36.5%;
+}
+
+.active {
+  background-color: #e6e6e6;
+  opacity: 0.8;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* =============================== BODY ===============================*/
+#container {
   display: flex;
   justify-content: center;
   height: auto;
@@ -47,7 +114,7 @@ img {
 }
 
 /* =============================== HEADER ===============================*/
-#header{
+#header {
   display: flex;
   justify-content: center;
   height: auto;
@@ -59,7 +126,7 @@ img {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: center;
   -webkit-border-top-left-radius: 14px;
   -webkit-border-top-right-radius: 14px;
   -moz-border-radius-topleft: 14px;
@@ -101,20 +168,20 @@ img {
   text-align: center;
   font-family: Roboto Condensed;
   font-style: normal;
-  font-size: 1.5vw;  
-  color: #003F63;
+  font-size: 1.5vw;
+  color: #003f63;
   text-decoration: none;
 }
 
 .text-nav:hover {
-  background: #EAAD39;
+  background: #eaad39;
   border: none;
-  border-radius: 14px;  
+  border-radius: 14px;
 }
 
 .button-form {
-  background: #EAAD39;
-  border-radius: 14px;  
+  background: #eaad39;
+  border-radius: 14px;
   margin-left: 0.2em;
   margin-right: 0.2em;
   text-align: center;
@@ -128,42 +195,28 @@ img {
   text-align: center;
   font-family: Roboto Condensed;
   font-style: normal;
-  font-size: 1.5vw;  
-  color: #003F63;
+  font-size: 1.5vw;
+  color: #003f63;
   text-decoration: none;
 }
 
 .button-form:hover {
-  background: #003F63;
+  background: #003f63;
   height: 4vw;
   color: white;
-}
-
-.site-header {
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 0;
 }
 
 .home-page-img {
   flex-shrink: 0;
   min-width: 100%;
-  min-height: 100%
-}
-
-.a-size {
-  padding: 0.7vw;
-  text-decoration: none;
-  background-color: black;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 /* =============================== SLIDES ================================*/
 
 .slide-img {
-  max-height: 31em;
+  max-height: 30em;
   width: 100%;
   object-fit: cover;
 }
@@ -255,88 +308,118 @@ img {
 
 /* =============================== CONTENT ===============================*/
 
-#content {
-  display:flex;
+#div-our-instalations {
+  width: 90%;
+  height: 80%;
+  background: var(--color-caracteristico);
+  justify-self: center;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  margin-top: 20px;
+}
+
+#our-instalations {
+  text-align: center;
+}
+
+#our-instalations-text {
+  margin: 20px;
+  color: #ffffff;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+#Reservation {
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#Reservation-info {
+  margin-top: 2%;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  height: 250px;
+  text-align: center;
+  align-self: center;
+  -webkit-box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+}
+
+#Reservation-data {
+  align-self: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.div-form {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: rgb(112, 112, 112);
+  text-decoration: none;
+}
+
+.form-text-date {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: rgb(112, 112, 112);
+  text-decoration: none;
+  height: 65px;
+}
+
+.form-text-data {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: rgb(112, 112, 112);
+  text-decoration: none;
+  height: 65px;
+  width: 100px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background: white;
 }
 
-#div-about-us {
-  width: 50%;  
-  background: var(--color-caracteristico);
-  justify-self: center;
-  align-self: flex-end;
-  margin-top: 5%;
-  -webkit-border-top-left-radius: 14px;
-  -webkit-border-bottom-left-radius: 14px;
-  -moz-border-radius-topleft: 14px;
-  -moz-border-radius-bottomleft: 14px;
-  border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
-}
-
-#divisor-about-us {
-  margin-left: 5%;  
-}
-
-#about-us-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2em;
-  line-height: 2em;
-  color: white;
-  margin: 2%;
-}
-
-#about-us-info {
-  width: 70%;
-  height: auto;
-  align-self: center;
-  margin-top: 4%;  
-}
-
-.about-us-info-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5em;
-  line-height: 1.5em; 
-  color: #003F63;
-}
-
-#div-google-maps {
-  width: 40%;
-  background: #EAAD39;
-  margin-top: 5%;
-  -webkit-border-top-right-radius: 14px;
-  -webkit-border-bottom-right-radius: 14px;
-  -moz-border-radius-topright: 14px;
-  -moz-border-radius-bottomright: 14px;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
-}
-
-#divisor-google-maps {
-  margin-right: 5%;  
-}
-
-.google-maps-text {
-  text-align: right;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2em;
-  line-height: 2em;
-  color: #003F63;
-  margin: 2%;
-}
-
-#google-maps {
+#content-info {
   margin-top: 2%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  align-self: center;
+}
+
+.column {
+  text-align: center;
+  float: left;
+  width: 50%;
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 /* ================================ FOOTER ================================ */
@@ -346,7 +429,7 @@ img {
   bottom: 0;
   width: 100%;
   height: 20em;
-  background-color: #BFC9CD ;
+  background-color: #bfc9cd;
   color: white;
   text-align: center;
   display: flex;
@@ -358,7 +441,7 @@ img {
   margin-left: 15%;
   margin-right: 15%;
   font-size: 1.7em;
-  color: #003F63;
+  color: #003f63;
 }
 
 .button {
@@ -374,7 +457,7 @@ img {
 }
 
 .footer-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #afb2bb;
   text-decoration: none;
 }
@@ -408,7 +491,6 @@ img {
 
 /* ============================== RESPONSIVE ============================== */
 
-
 @media screen and (max-width: 1280px) {
   .item-p {
     font-size: 1.3em;
@@ -416,9 +498,9 @@ img {
 }
 
 @media screen and (max-width: 900px) {
-  #logo {    
-    width: 20%;    
-    align-self: center;    
+  #logo {
+    width: 20%;
+    align-self: center;
   }
 
   #WelcomeContent {
@@ -435,7 +517,7 @@ img {
     display: flex;
   }
 
-  .text-nav{    
+  .text-nav {
     padding: 1px;
     font-size: 1.2em;
     border-radius: 5px;
@@ -451,11 +533,17 @@ img {
     width: 100%;
   }
 
+  .row {
+    flex-direction: column;
+  }
 
+  .column {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 540px) {
-
   #main-content {
     width: 100%;
     height: auto;
@@ -470,9 +558,9 @@ img {
     justify-content: center;
   }
 
-  #logo {    
-    width: 70%;    
-    align-self: center;    
+  #logo {
+    width: 70%;
+    align-self: center;
   }
 
   #navigation-bar {
@@ -480,13 +568,13 @@ img {
     display: flex;
   }
 
-  .text-nav{    
+  .text-nav {
     padding: 1px;
     font-size: 1em;
     border-radius: 5px;
   }
 
-  .button-form {    
+  .button-form {
     height: 25px;
     border-radius: 5px;
     font-size: 1em;
@@ -499,7 +587,7 @@ img {
 
   .about-us-info-text {
     font-size: 1em;
-    line-height: 1em; 
+    line-height: 1em;
   }
 
   .google-maps-text {
@@ -518,24 +606,23 @@ img {
   .icon-size {
     font-size: 1.7em;
   }
-
 }
 
 @media screen and (max-width: 360px) {
-  .text-nav {        
+  .text-nav {
     font-size: 0.8em;
     font-weight: 600;
   }
 
-  .button-form { 
+  .button-form {
     margin-top: 5px;
-    margin-left: 125px;   
-    height: 25px;    
-    padding: 0px; 
-    font-size: 0.8em;    
+    margin-left: 125px;
+    height: 25px;
     padding: 0px;
-    font-weight: 600; 
-  }  
+    font-size: 0.8em;
+    padding: 0px;
+    font-weight: 600;
+  }
 
   .footer-ul {
     display: flex;
@@ -545,5 +632,4 @@ img {
   .icon-size {
     font-size: 1em;
   }
-
 }
