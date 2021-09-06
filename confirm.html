@@ -19,7 +19,7 @@
                     </img></a>
                     <figcaption></figcaption>
                 </figure>
-                <div id="navigation-bar">                                        
+                <div id="navigation-bar">
                     <nav class="nav-bar">
                         <a href="/aboutUs.html" class="text-nav">Nosotros</a>
                         <a href="/touristPacks.html" class="text-nav">Paquetes turisticos</a>
@@ -35,7 +35,7 @@
             <div id="div-our-instalations">
                 <div id="our-instalations">
                     <p id="our-instalations-text">Confirmacion de reserva</p>
-                </div>                
+                </div>
             </div>
 
             <div class="details-block">
@@ -69,38 +69,41 @@
                 </div>
             </div>
 
-            <div class="personal-info-block">
+            <form class="personal-info-block" action="/index.html">
                 <div class="row">
-                    <p>Informacion personal</p>
+                    <p class="personal-info-row">Informacion personal</p>
                 </div>
-                <div class="row">
+                <div class="row form-compact">
                     <div class="column" style="align-items: center;">
                         <div class="column personal-info-content">
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" placeholder="nombre">
-                            <label for="email">Email:</label>
-                            <input type="text" id="email" placeholder="email">
-                            <label for="country">Pais de residencia:</label>
-                            <input type="text" id="country" placeholder="pais de residencia">
-                            <label for="address">Dirección:</label>
-                            <input type="text" id="address" placeholder="dirección">
+                            <label class="personal-info-label" for="name">Nombre:</label>
+                            <input class="personal-info-input" type="text" id="name" placeholder="nombre">
+                            <label class="personal-info-label" for="email">Email:</label>
+                            <input class="personal-info-input" type="text" id="email" placeholder="email">
+                            <label class="personal-info-label" for="country">Pais de residencia:</label>
+                            <input class="personal-info-input" type="text" id="country" placeholder="pais de residencia">
+                            <label class="personal-info-label" for="address">Dirección:</label>
+                            <input class="personal-info-input" type="text" id="address" placeholder="dirección">
                         </div>
                     </div>
-                    <div class="column" style="align-items: center;">
+                    <div class="column" style="align-items: center; justify-content: start;">
                         <div class="column personal-info-content">
-                            <label for="lastName">Apellido:</label>
-                            <input type="text" id="lastName" placeholder="apellido">
-                            <label for="tel">Telefono:</label>
-                            <input type="text" id="tel" placeholder="telefono">
-                            <label for="city">Ciudad de residencia:</label>
-                            <input type="text" id="city" placeholder="ciudad de residencia">
+                            <label class="personal-info-label" for="lastName">Apellido:</label>
+                            <input class="personal-info-input" type="text" id="lastName" placeholder="apellido">
+                            <label class="personal-info-label" for="tel">Telefono:</label>
+                            <input class="personal-info-input" type="text" id="tel" placeholder="telefono">
+                            <label class="personal-info-label" for="city">Ciudad de residencia:</label>
+                            <input class="personal-info-input" type="text" id="city" placeholder="ciudad de residencia">
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="row personal-info-row">
+                    <input class="personal-info-submit" type="submit" value="IR A PAGAR">
+                </div>
+            </form>
+
         </div>
 
-                    
         <footer class="footer">
             <div class="footer-group">
                 <div class="footer-item-list">
