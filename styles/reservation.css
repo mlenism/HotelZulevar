@@ -570,10 +570,6 @@ img {
     flex-direction: column;
   }
 
-  #main-content {
-    background: red;
-  }
-
   .div-form {
     height: auto;
     display: flex;

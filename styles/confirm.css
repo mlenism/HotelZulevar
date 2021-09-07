@@ -203,10 +203,6 @@ img {
   flex-direction: column;
 }
 
-.align-left {
-  text-align: left;
-}
-
 /* ============================ DETAILS BLOCK ==============================*/
 
 .details-block {
@@ -225,6 +221,10 @@ img {
   font-weight: bolder;
 }
 
+.details-text-space {
+  margin-bottom: 2em;
+}
+
 .details-text {
   color: var(--color-caracteristico);
 }
@@ -239,6 +239,14 @@ img {
   background-color: var(--color-caracteristico);
   height: 0.1em;
   width: 94%;
+}
+
+.align {
+  text-align: left;
+}
+
+.margin-left {
+  margin-left: 1em;
 }
 
 /* ========================== PERSONAL INFO BLOCK ==========================*/
@@ -439,6 +447,60 @@ img {
   .column {
     width: 100%;
     max-width: 100%;
+    /* justify-content: start;
+    text-align: start;
+    display: block; */
+  }
+
+  /* ======= DETAILS BLOCK ======== */
+  .details-block {
+    height: 43em;
+    margin-bottom: 3em;
+  }
+
+  .div-line-vertical {
+    background-color: unset;
+    width: unset;
+    margin: unset;
+  }
+
+  .div-line-horizontal {
+    background-color: unset;
+    height: unset;
+    width: unset;
+  }
+
+  .details-text-space {
+    margin-bottom: 0;
+  }
+
+  .details-text,
+  .details-title {
+    margin-bottom: 0px;
+  }
+
+  .align {
+    text-align: center;
+  }
+
+  .margin-left {
+    margin-left: 0;
+  }
+
+  /* ===== PERSONAL INFO BLOCK ===== */
+  .personal-info-block {
+    height: 48em;
+  }
+
+  .personal-info-row {
+    width: 85%;
+    align-content: center;
+    margin-left: 7%;
+  }
+
+  .personal-info-submit {
+    padding-block: 0.5em;
+    font-size: 2.5vw;
   }
 }
 
@@ -506,6 +568,10 @@ img {
   .icon-size {
     font-size: 1.7em;
   }
+
+  .personal-info-submit {
+    font-size: 3.7vw;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -531,5 +597,9 @@ img {
 
   .icon-size {
     font-size: 1em;
+  }
+
+  .personal-info-submit {
+    font-size: 5vw;
   }
 }
