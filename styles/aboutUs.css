@@ -82,16 +82,16 @@ img {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 /* =============================== BODY ===============================*/
-#container {   
+#container {
   display: flex;
   justify-content: center;
   height: auto;
@@ -159,7 +159,7 @@ img {
   text-align: center;
   font-family: Roboto Condensed;
   font-style: normal;
-  font-size: 1.5vw;  
+  font-size: 1.5vw;
   color: #003F63;
   text-decoration: none;
 }
@@ -167,12 +167,12 @@ img {
 .text-nav:hover {
   background: #EAAD39;
   border: none;
-  border-radius: 14px;  
+  border-radius: 14px;
 }
 
 .button-form {
   background: #EAAD39;
-  border-radius: 14px;  
+  border-radius: 14px;
   margin-left: 0.2em;
   margin-right: 0.2em;
   text-align: center;
@@ -186,7 +186,7 @@ img {
   text-align: center;
   font-family: Roboto Condensed;
   font-style: normal;
-  font-size: 1.5vw;  
+  font-size: 1.5vw;
   color: #003F63;
   text-decoration: none;
 }
@@ -218,7 +218,7 @@ img {
 }
 
 #our-instalations {
-  text-align: center; 
+  text-align: center;
 }
 
 #our-instalations-text {
@@ -227,7 +227,7 @@ img {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;  
+  font-size: 30px;
 }
 
 .div-we {
@@ -244,7 +244,7 @@ img {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 .div-we-info {
@@ -254,7 +254,7 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 1.5em;
-  line-height: 1.5em; 
+  line-height: 1.5em;
   color: #003F63;
 }
 
@@ -366,9 +366,9 @@ img {
 }
 
 @media screen and (max-width: 900px) {
-  #logo {    
-    width: 20%;    
-    align-self: center;    
+  #logo {
+    width: 20%;
+    align-self: center;
   }
 
   #WelcomeContent {
@@ -385,7 +385,7 @@ img {
     display: flex;
   }
 
-  .text-nav{    
+  .text-nav{
     padding: 1px;
     font-size: 1.2em;
     border-radius: 5px;
@@ -404,7 +404,7 @@ img {
   .row {
     flex-direction: column;
   }
-  
+
   .column{
     width: 100%;
     max-width: 100%;
@@ -429,9 +429,9 @@ img {
     justify-content: center;
   }
 
-  #logo {    
-    width: 70%;    
-    align-self: center;    
+  #logo {
+    width: 70%;
+    align-self: center;
   }
 
   #navigation-bar {
@@ -439,13 +439,13 @@ img {
     display: flex;
   }
 
-  .text-nav{    
+  .text-nav{
     padding: 1px;
     font-size: 1em;
     border-radius: 5px;
   }
 
-  .button-form {    
+  .button-form {
     height: 25px;
     border-radius: 5px;
     font-size: 1em;
@@ -458,7 +458,7 @@ img {
 
   .about-us-info-text {
     font-size: 1em;
-    line-height: 1em; 
+    line-height: 1em;
   }
 
   .google-maps-text {
@@ -481,20 +481,20 @@ img {
 }
 
 @media screen and (max-width: 360px) {
-  .text-nav {        
+  .text-nav {
     font-size: 0.8em;
     font-weight: 600;
   }
 
-  .button-form { 
+  .button-form {
     margin-top: 5px;
-    margin-left: 125px;   
-    height: 25px;    
-    padding: 0px; 
-    font-size: 0.8em;    
+    margin-left: 125px;
+    height: 25px;
     padding: 0px;
-    font-weight: 600; 
-  }  
+    font-size: 0.8em;
+    padding: 0px;
+    font-weight: 600;
+  }
 
   .footer-ul {
     display: flex;

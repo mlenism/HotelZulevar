@@ -408,9 +408,9 @@ img {
 }
 
 @media screen and (max-width: 900px) {
-  #logo {    
-    width: 20%;    
-    align-self: center;    
+  #logo {
+    width: 20%;
+    align-self: center;
   }
 
   #WelcomeContent {
@@ -427,7 +427,7 @@ img {
     display: flex;
   }
 
-  .text-nav{    
+  .text-nav{
     padding: 1px;
     font-size: 1.2em;
     border-radius: 5px;
