@@ -298,12 +298,12 @@ img {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -315,7 +315,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto;  
+  height: auto;
 }
 
 #content-info {
@@ -347,7 +347,7 @@ img {
 
 #Reservation {
   width: 90%;
-  height: 100%;  
+  height: 100%;
   display: flex;
   justify-content: center;
   margin: 2%;
@@ -357,9 +357,9 @@ img {
   background-color: rgb(255, 255, 255);
   width: 90%;
   height: auto;
-  text-align: center;  
+  text-align: center;
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
 }
 
 #Reservation-data {
@@ -519,7 +519,7 @@ img {
     display: flex;
   }
 
-  .text-nav {    
+  .text-nav {
     padding: 1px;
     font-size: 1.2em;
     border-radius: 5px;
@@ -537,12 +537,12 @@ img {
 
   #div-our-instalations {
     width: 90%;
-    justify-self: center;    
+    justify-self: center;
     height: auto;
-  } 
-  
+  }
+
   #our-instalations-text {
-    font-size: 1em;    
+    font-size: 1em;
     color: #ffffff;
   }
 
@@ -562,7 +562,7 @@ img {
     flex-direction: column;
     margin: 20px;
   }
-  
+
   #Reservation-data {
     height: auto;
     width: 100%;
@@ -570,10 +570,10 @@ img {
     flex-direction: column;
   }
 
-  .div-form {  
+  .div-form {
     height: auto;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
   }
 
   .form-text {
@@ -582,13 +582,13 @@ img {
     color: rgb(112, 112, 112);
     text-align: center;
   }
-  
+
   .form-text-date {
     font-size: 1em;
     height: auto;
     align-self: center;
   }
-  
+
   .form-text-data {
     font-size: 1em;
     color: rgb(112, 112, 112);
@@ -604,7 +604,6 @@ img {
   }
 
 }
-
 
 @media screen and (max-width: 540px) {
   #main-content {
@@ -654,14 +653,14 @@ img {
     text-decoration: none;
     height: auto;
     cursor: pointer;
-  
+
     text-align: center;
     font-family: Roboto Condensed;
     font-style: normal;
     font-size: 1.5em;
     color: #003f63;
     text-decoration: none;
-    
+
   }
 
   #about-us-text {
