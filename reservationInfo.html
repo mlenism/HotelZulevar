@@ -38,9 +38,23 @@
             </div>
 
             <div class="div-search">
-                <label for="searchName" id="search-label">Buscar por nombre</label>
-                <input id="searchName" type="text" placeholder="Pepito Perez">
-                <a href=# id="search-button">Buscar</a>
+                <div id="div-filter">
+                    <p id="filter-text">Filtros</p>
+                </div>
+                <div id="div-search-name">
+                    <label for="searchName" id="search-label">Buscar por nombre</label>
+                    <input id="searchName" type="text" placeholder="Pepito Perez">
+                    
+                </div>
+                <div id="div-search-temp">
+                    <label for="searchTemp" id="searchTemp-label">Buscar por temporada</label>
+                    <select id="searchTemp" >
+                        <option value="1" selected="selected">---------</option>
+                        <option value="2">Baja</option>
+                        <option value="3">Alta</option>
+                    </select>
+                </div>
+                <a href=# id="search-button">Buscar</a>        
             </div>
 
             <div class="reservation-info">
