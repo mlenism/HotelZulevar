@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#div-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  background: rgb(255, 255, 255, 0.6);
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+
+#div-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+#logo {
+  align-self: center;
+  justify-self: center;
+  width: 50%;
+}
+
+#div-login-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.login-text {
+  margin-bottom: 3%;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-size: 1.5vw;
+  color: #003f63;
+  text-decoration: none;
+}
+
+#accept-button {
+  background: #003f63;
+  color: white;
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-size: 1.5vw;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  margin: 5%;
+}
