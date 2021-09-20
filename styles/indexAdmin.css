@@ -33,73 +33,6 @@ img {
   vertical-align: middle;
 }
 
-.mySlides {
-  display: none;
-}
-
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 100%;
-  width: 25%;
-  margin: 0 2%;
-  background-color: #717171;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  opacity: 0.5;
-}
-
-.dot-position {
-  position: absolute;
-  width: 30%;
-  height: 7px;
-  top: 93%;
-  left: 36.5%;
-}
-
-.active {
-  background-color: #e6e6e6;
-  opacity: 0.8;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px;
-  }
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/* =============================== BODY ===============================*/
 #container {
   display: flex;
   justify-content: center;
@@ -126,7 +59,7 @@ img {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   -webkit-border-top-left-radius: 14px;
   -webkit-border-top-right-radius: 14px;
   -moz-border-radius-topleft: 14px;
@@ -145,12 +78,46 @@ img {
   height: auto;
   align-self: flex-end;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .nav-bar {
   margin-bottom: 2vw;
   height: auto;
+}
+
+.nav-bar-2 {
+  margin-bottom: 4vw;
+  width: 100%;
+}
+
+.nav-bar-2 .desple {
+  display: none;  
+}
+
+.nav-bar-2 .item:hover .desple {
+  display: block;
+  height: auto;
+  flex-direction: column;
+  position: fixed;
+  padding: 0px;
+  margin-top: 5px;
+}
+
+.text-nav-2 {  
+  text-align: center;
+  background: none;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;  
+
+  text-align: center;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-size: 1.5vw;
+  color: #003f63;
+  text-decoration: none;
 }
 
 .text-nav {
@@ -181,7 +148,6 @@ img {
 
 .button-form {
   background: #eaad39;
-  margin-top: 22%;
   border-radius: 14px;
   margin-left: 0.2em;
   margin-right: 0.2em;
@@ -207,17 +173,31 @@ img {
   color: white;
 }
 
+.site-header {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+}
+
 .home-page-img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
-  object-fit: cover;
+}
+
+.a-size {
+  padding: 0.7vw;
+  text-decoration: none;
+  background-color: black;
 }
 
 /* =============================== SLIDES ================================*/
 
 .slide-img {
-  max-height: 30em;
+  max-height: 31em;
   width: 100%;
   object-fit: cover;
 }
@@ -266,7 +246,8 @@ img {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -288,23 +269,34 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px;
+  }
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* =============================== CONTENT ===============================*/
@@ -312,116 +304,85 @@ img {
 #content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: auto;  
+  background: white;
 }
 
-#content-info {
-  margin-top: 2%;
-}
-
-#div-our-instalations {
-  width: 90%;
+#div-about-us {
+  width: 50%;
   background: var(--color-caracteristico);
   justify-self: center;
-  -webkit-border-radius: 14px;
-  -moz-border-radius: 14px;
-  border-radius: 14px;
-  margin-top: 20px;
+  align-self: flex-end;
+  margin-top: 5%;
+  -webkit-border-top-left-radius: 14px;
+  -webkit-border-bottom-left-radius: 14px;
+  -moz-border-radius-topleft: 14px;
+  -moz-border-radius-bottomleft: 14px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
 }
 
-#our-instalations {
-  text-align: center;
+#divisor-about-us {
+  margin-left: 5%;
 }
 
-#our-instalations-text {
-  margin: 20px;
-  color: #ffffff;
-  font-family: Roboto Condensed;
+#about-us-text {
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-}
-
-#Reservation {
-  width: 90%;
-  height: 100%;  
-  display: flex;
-  justify-content: center;
+  font-size: 2em;
+  line-height: 2em;
+  color: white;
   margin: 2%;
 }
 
-#Reservation-info {
-  background-color: rgb(255, 255, 255);
-  width: 90%;
+#about-us-info {
+  width: 70%;
   height: auto;
-  text-align: center;  
-  display: flex;
-  flex-direction: row;  
-}
-
-#Reservation-data {
-  justify-content: space-around;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   align-self: center;
-  -webkit-box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 7px 10px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 4%;
 }
 
-.div-form {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-}
-
-.form-text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  color: rgb(112, 112, 112);
-  text-decoration: none;
-}
-
-.form-text-date {
-  font-family: "Open Sans", sans-serif;
+.about-us-info-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 1.5em;
-  color: rgb(112, 112, 112);
-  text-decoration: none;
-  height: 3em;
+  line-height: 1.5em;
+  color: #003f63;
 }
 
-.form-text-data {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.5em;
-  color: rgb(112, 112, 112);
-  text-decoration: none;
-  height: 3em;
-  width: 100px;
+#div-google-maps {
+  width: 40%;
+  background: #eaad39;
+  margin-top: 5%;
+  -webkit-border-top-right-radius: 14px;
+  -webkit-border-bottom-right-radius: 14px;
+  -moz-border-radius-topright: 14px;
+  -moz-border-radius-bottomright: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
+#divisor-google-maps {
+  margin-right: 5%;
+}
+
+.google-maps-text {
+  text-align: right;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 2em;
+  color: #003f63;
+  margin: 2%;
+}
+
+#google-maps {
+  margin-top: 2%;
   width: 100%;
-}
-
-.column {
-  text-align: center;
-  float: left;
-  width: 50%;
-  max-width: 50%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  flex-direction: column;
+  align-self: center;
 }
 
 /* ================================ FOOTER ================================ */
@@ -519,7 +480,7 @@ img {
     display: flex;
   }
 
-  .text-nav {    
+  .text-nav {
     padding: 1px;
     font-size: 1.2em;
     border-radius: 5px;
@@ -528,83 +489,13 @@ img {
 
 @media screen and (max-width: 768px) {
   #logo {
-    width: 100%;
+    width: 50%;
   }
 
   #navigation-bar {
     width: 100%;
   }
-
-  #div-our-instalations {
-    width: 90%;
-    justify-self: center;    
-    height: auto;
-  } 
-  
-  #our-instalations-text {
-    font-size: 1em;    
-    color: #ffffff;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .column {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #Reservation {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
-  
-  #Reservation-data {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .div-form {  
-    height: auto;
-    display: flex;
-    flex-direction: column;    
-  }
-
-  .form-text {
-    margin: 5%;
-    font-size: 1em;
-    color: rgb(112, 112, 112);
-    text-align: center;
-  }
-  
-  .form-text-date {
-    font-size: 1em;
-    height: auto;
-    align-self: center;
-  }
-  
-  .form-text-data {
-    font-size: 1em;
-    color: rgb(112, 112, 112);
-    height: auto;
-    align-self: center;
-  }
-
-  .button-form {
-    height: 25px;
-    border-radius: 5px;
-    font-size: 1em;
-    padding: 3px;
-  }
-
 }
-
 
 @media screen and (max-width: 540px) {
   #main-content {
@@ -637,31 +528,11 @@ img {
     border-radius: 5px;
   }
 
-  .div-form-button {
-    background: white;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
   .button-form {
-    margin: 10%;
-    align-self: center;
-    justify-self: center;
-    border-radius: 14px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    height: auto;
-    cursor: pointer;
-  
-    text-align: center;
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-size: 1.5em;
-    color: #003f63;
-    text-decoration: none;
-    
+    height: 25px;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 3px;
   }
 
   #about-us-text {
@@ -698,9 +569,12 @@ img {
   }
 
   .button-form {
+    margin-top: 5px;
+    margin-left: 125px;
     height: 25px;
     padding: 0px;
     font-size: 0.8em;
+    padding: 0px;
     font-weight: 600;
   }
 
