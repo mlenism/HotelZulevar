@@ -266,7 +266,8 @@ img {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -288,23 +289,34 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px;
+  }
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* =============================== CONTENT ===============================*/
@@ -323,13 +335,10 @@ img {
 }
 
 #div-our-instalations {
-  width: 90%;
+  width: 100%;
   background: var(--color-caracteristico);
   justify-self: center;
-  -webkit-border-radius: 14px;
-  -moz-border-radius: 14px;
-  border-radius: 14px;
-  margin-top: 20px;
+  margin-bottom: 2%;
 }
 
 #our-instalations {
@@ -346,11 +355,11 @@ img {
 }
 
 #Reservation {
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
-  margin: 2%;
+  margin-bottom: 4%;
 }
 
 #Reservation-info {
@@ -422,6 +431,124 @@ img {
   align-items: center;
   overflow: hidden;
   flex-direction: column;
+}
+
+.div-packs {
+  align-self: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+.div-pack-text {
+  text-align: left;
+}
+
+#div-packs {
+  align-self: center;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.div-card-pack {
+  background: #c4c4c4;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  margin-left: 5%;
+  -webkit-box-shadow: -1px 4px 15px -3px #000000;
+  box-shadow: -1px 4px 15px -3px #000000;
+}
+
+.div-card-pack:hover {
+  -webkit-transition: all 0.4s 0s ease-in, box-shadow 0.3s 0s ease;
+  -moz-transition: all 0.4s 0s ease-in, box-shadow 0.3s 0s ease;
+  -o-transition: all 0.4s 0s ease-in, box-shadow 0.3s 0s ease;
+  transition: all 0.4s 0s ease-in, box-shadow 0.3s 0s ease;
+  width: 500px;
+}
+
+.div-card-pack:active {
+  -webkit-transition: all 0.2s 0s ease-in, box-shadow 0.3s 0s ease;
+  -moz-transition: all 0.2s 0s ease-in, box-shadow 0.3s 0s ease;
+  -o-transition: all 0.2s 0s ease-in, box-shadow 0.3s 0s ease;
+  transition: all 0.2s 0s ease-in, box-shadow 0.3s 0s ease;
+  background: #003f63;
+  width: 500px;
+}
+
+.div-card-pack:active .card-pack-text {
+  color: white;
+}
+
+.card-pack-text {
+  text-align: center;
+}
+
+.div-reservation {
+  width: 80%;
+  background: #eaad39;
+  justify-self: center;
+  margin-bottom: 2%;
+}
+
+.our-reservation-text {
+  text-align: center;
+  margin: 20px;
+  color: rgb(0, 63, 99);
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+#div-confirm {
+  background: rgb(0, 63, 99);
+  width: 80%;
+  margin-bottom: 2%;
+}
+
+.div-confirm-text {
+  color: white;
+  padding-left: 5%;
+}
+
+#div-button-confirm {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+#div-confirm-button {
+  text-decoration: none;
+  color: rgb(0, 63, 99);
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  width: 20%;
+  background: #eaad39;
+  text-align: center;
+  padding: 2%;
+  -webkit-box-shadow: -1px 4px 15px -3px #000000;
+  box-shadow: -1px 4px 15px -3px #000000;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+
+#div-confirm-button:hover {
+  -webkit-transition: all 0.2s 0s ease, box-shadow 0.3s 0s ease;
+  -moz-transition: all 0.2s 0s ease, box-shadow 0.3s 0s ease;
+  -o-transition: all 0.2s 0s ease, box-shadow 0.3s 0s ease;
+  transition: all 0.2s 0s ease, wid 0.3s 0s ease;
+  width: 40%
 }
 
 /* ================================ FOOTER ================================ */
@@ -536,7 +663,7 @@ img {
   }
 
   #div-our-instalations {
-    width: 90%;
+    width: 100%;
     justify-self: center;
     height: auto;
   }
@@ -603,6 +730,49 @@ img {
     padding: 3px;
   }
 
+  .our-reservation-text {
+    font-size: 20px;
+  }
+
+  .div-packs-text {
+    font-size: 20px;
+  }
+
+  #Reservation {
+    width: 80%;
+  }
+
+  #div-packs {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-card-pack {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .card-pack-text {
+    font-size: 20px;
+  }
+
+  .div-confirm-text {
+    font-size: 20px;
+  }
+
+  #div-button-confirm {
+    width: 100%;
+  }
+
+  #div-confirm-button {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .item-p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -660,7 +830,6 @@ img {
     font-size: 1.5em;
     color: #003f63;
     text-decoration: none;
-
   }
 
   #about-us-text {

@@ -276,13 +276,9 @@ img {
 }
 
 #div-our-instalations {
-  width: 90%;
+  width: 100%;
   height: auto;
-  background: var(--color-caracteristico);
-  -webkit-border-radius: 14px;
-  -moz-border-radius: 14px;
-  border-radius: 14px;
-  margin-top: 20px;
+  background: var(--color-caracteristico);  
 }
 
 #our-instalations {
@@ -353,7 +349,7 @@ img {
 }
 
 #div-back-button {
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: center;
 }
@@ -375,7 +371,7 @@ img {
   font-family: Roboto Condensed;
   font-style: normal;
   font-size: 1.5vw;
-  color: #eaad39;
+  color: white;
   text-decoration: none;
 }
 

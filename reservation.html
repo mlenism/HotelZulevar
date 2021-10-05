@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/reservation.css" />
 </head>
 
-<body id="container" style="background: url('images/background.jpg') no-repeat; max-width: 4000px; background-size:cover; min-height: 100%;">
+<body id="container" style="background: #DBEBFF">
     <div id="main-content">
         <header id="header">
             <div id="WelcomeContent">
@@ -35,6 +35,16 @@
                 <div id="our-instalations">
                     <p id="our-instalations-text">Reserva</p>
                 </div>
+            </div>
+
+            <div class="div-reservation">
+                <div class=".our-reservation">
+                    <p class="our-reservation-text">Fecha</p>
+                </div>
+            </div>
+
+            <div class="div-packs">
+                <p class="div-packs-text">1. Seleccione fecha</p>
             </div>
 
             <div id="Reservation">
@@ -78,44 +88,81 @@
                                 <option value="10">10</option>
                             </select>
                         </div>
-                        <div class="div-form-button">
-                            <button type="submit" class="button-form">
-                                RESERVAR
-                            </button>
-                        </div>
                     </form>
             </div>
+
+            <div class="div-reservation">
+                <div class=".our-reservation">
+                    <p class="our-reservation-text">Paquetes turisticos</p>
+                </div>
+            </div>
+
+            <div class="div-packs">
+                <p class="div-packs-text">2. Seleccione paquete turístico</p>
+            </div>
+
+            <div id="div-packs">
+                <div class="div-card-pack">
+                    <figure>
+                        <img class="home-page-img" src="images/slides/balcon.jpg" width="100%" height="200">
+                    </figure>
+                    <p class="card-pack-text">Paquete 1<p>
+                </div>
+                <div class="div-card-pack">
+                    <figure>
+                        <img class="home-page-img" src="images/slides/balcon.jpg" width="100%" height="200">
+                    </figure>
+                    <p class="card-pack-text">Paquete 1<p>
+                </div>
+            </div>
+
+            <div class="div-reservation">
+                <div class=".our-reservation">
+                    <p class="our-reservation-text">Habitaciones</p>
+                </div>
+            </div>
+            <div class="div-packs">
+                <p class="div-packs-text">3. Seleccione habitación</p>
+                <p class="div-packs-text" style="text-align:center; color: rgb(0, 63, 99)">Recuerde que con su paquete turistico viene incluida una noche en el hotel</p>
+            </div>
+            
+            <div id="div-packs">
+                <div class="div-card-pack">
+                    <figure>
+                        <img class="home-page-img" src="images/slides/balcon.jpg" width="100%" height="200">
+                    </figure>
+                    <p class="card-pack-text">Habitacion 1<p>
+                </div>
+                <div class="div-card-pack">
+                    <figure>
+                        <img class="home-page-img" src="images/slides/balcon.jpg" width="100%" height="200">
+                    </figure>
+                    <p class="card-pack-text">Habitacion 2<p>
+                </div>
+            </div>
+
+            <div class="div-reservation">
+                <div class=".our-reservation">
+                    <p class="our-reservation-text">Resumen de la reserva</p>
+                </div>
+            </div>
+
+            <div id="div-confirm">
+                <div>
+                    <p class= div-confirm-text>Paquete seleccionado: Paquete 2</p>
+                    <p class= div-confirm-text>Habitación seleccionada: Habitacion 1</p>
+                    <p class= div-confirm-text>Fecha de ingreso: 10/01/2021</p>
+                    <p class= div-confirm-text>Fecha de salida: 10/03/2021</p>
+                    <p class= div-confirm-text>Adultos: 3</p>
+                    <p class= div-confirm-text>Niños: 0</p>
+                </div>
+            </div>
+
+            <div id="div-button-confirm">
+                <a id="div-confirm-button" href=#>Confirmar reserva</a>
+            </div>
+
         </div>
-
-            <!-- Posible portada con slides al igual que en index -->
-
-        <div class="slideshow-container">
-            <div class="mySlides fade" style="margin-bottom: 1em;">
-                <img class="slide-img" src="images/slides/frente.jpg"/>
-            </div>
-
-            <div class="mySlides fade" style="margin-bottom: 1em;">
-                <img class="slide-img" src="images/slides/balcon.jpg"/>
-            </div>
-
-            <div class="mySlides fade" style="margin-bottom: 1em;">
-                <img class="slide-img" src="images/slides/recepcion.jpg"/>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div class="dot-position">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-
-        </div>
-
-            <!-- <div style="width: 100%; margin-top: 2%">
-                <img class="home-page-img" src="images/aboutUs/recepcion.jpg" alt="Recepcion" width="100%" height="400">
-            </div>         -->
 
         <footer class="footer">
             <div class="footer-group">
@@ -134,7 +181,7 @@
                             <a href="#" class="fa fa-facebook icon-size" style="color:#003F63;"></a>
                         </li>
                         <li>
-                            <a href="#" class="fa fa-instagram icon-size" style="color:#D3A13D;"></a>
+                            <a href="#" class="fa fa-instagram icon-size" style="color:#003F63;"></a>
                         </li>
                         <li>
                             <a href="#" class="fa fa-whatsapp icon-size" style="color:#003F63;"></a>
